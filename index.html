@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atomy Global | Smart Shopping That Pays You Back | Yoon Dahye</title>
+<meta property="og:title" content="Shop Smarter. Earn Automatically. | Atomy Global"/>
+<meta property="og:description" content="$0 join fee. No autoship. No monthly fees. Just switch your daily shopping and earn cashback — in 27 countries."/>
+<meta property="og:type" content="website"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="description" content="Atomy Global — K-Beauty & Wellness. 27 Countries. Free to Join. No Autoship. Real cashback from daily shopping."/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+
+/* =============================================
+   SPONSOR CODE — CHANGE ONLY THIS ONE LINE
+   ============================================= */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --blue:       #00a0e9;
+  --blue-dark:  #0077b6;
+  --blue-deep:  #004e8c;
+  --blue-light: #e0f4fd;
+  --blue-pale:  #f0faff;
+  --white:      #ffffff;
+  --off-white:  #f5f9fc;
+  --ink:        #0d1f2d;
+  --ink-mid:    #2c4a5e;
+  --gray:       #6b8394;
+  --gray-light: #d0dde6;
+  --red:        #e63946;
+  --green:      #1b9e6e;
+  --green-bg:   #e8f8f2;
+  --border:     rgba(0,160,233,0.15);
+  --border-soft: rgba(0,0,0,0.08);
+  --font: 'Plus Jakarta Sans', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font);
+  background: var(--white);
+  color: var(--ink);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ══ HERO ══ */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(145deg, #004e8c 0%, #0077b6 45%, #00a0e9 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 120px 24px 100px;
+  position: relative;
+  overflow: visible;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -1px; left: 0; right: 0;
+  height: 60px;
+  background: var(--white);
+  clip-path: ellipse(55% 100% at 50% 100%);
+  z-index: 0;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-orb {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.06);
+  pointer-events: none;
+}
+.hero-orb.o1 { width: 500px; height: 500px; top: -120px; right: -100px; }
+.hero-orb.o2 { width: 300px; height: 300px; bottom: 60px; left: -80px; }
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.18);
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 100px;
+  padding: 8px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  backdrop-filter: blur(4px);
+}
+
+.hero-badge-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.8;
+}
+
+.hero h1 {
+  font-size: clamp(2.4rem, 7.5vw, 5rem);
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.2;
+  max-width: 860px;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+  overflow: visible;
+  padding: 0 16px 8px;
+}
+
+.hero h1 em {
+  font-style: normal;
+  color: #fff;
+}
+
+.hero-sub {
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  color: rgba(255,255,255,0.82);
+  max-width: 560px;
+  margin: 0 auto 52px;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 0;
+  margin-bottom: 52px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.22);
+  border-radius: 20px;
+  padding: 24px 40px;
+  backdrop-filter: blur(8px);
+  gap: 40px;
+}
+
+.hero-stat { text-align: center; }
+
+.hero-stat-num {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: #fff;
+  display: block;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.hero-stat-label {
+  font-size: 11px;
+  color: rgba(255,255,255,0.65);
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  font-weight: 600;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  color: var(--blue-dark);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 18px 44px;
+  border-radius: 100px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  letter-spacing: 0.01em;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 14px 40px rgba(0,0,0,0.22); }
+.btn-primary svg { width: 18px; height: 18px; }
+
+.hero-no-fees {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.no-fee-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.65);
+  font-weight: 500;
+}
+
+.no-fee-x {
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 9px; font-weight: 800; color: #fff;
+  flex-shrink: 0;
+}
+
+/* ══ SHARED SECTION ══ */
+section { padding: 88px 24px; }
+.container { max-width: 1060px; margin: 0 auto; }
+
+.section-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 18px;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+}
+
+.section-desc {
+  font-size: 1.05rem;
+  color: var(--gray);
+  max-width: 560px;
+  line-height: 1.78;
+}
+
+/* ══ COMPARE ══ */
+.problem { background: var(--off-white); }
+
+.compare-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 48px;
+}
+@media(max-width:620px){ .compare-grid { grid-template-columns: 1fr; } }
+
+.compare-card {
+  background: var(--white);
+  border: 1.5px solid var(--border-soft);
+  border-radius: 20px;
+  padding: 32px 28px;
+}
+
+.compare-card.good {
+  border-color: var(--blue);
+  border-width: 2px;
+  background: linear-gradient(160deg, #fff 70%, var(--blue-pale) 100%);
+}
+
+.compare-card-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.compare-icon {
+  width: 46px; height: 46px;
+  border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.bad-icon  { background: #fdecea; }
+.good-icon { background: var(--blue-light); }
+
+.compare-card-header h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--ink);
+}
+
+.compare-list { list-style: none; }
+.compare-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  font-size: 0.93rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--ink-mid);
+}
+.compare-list li:last-child { border-bottom: none; }
+.compare-list li::before { flex-shrink: 0; font-size: 13px; font-weight: 800; margin-top: 1px; }
+.compare-list.bad-list  li::before { content: '✕'; color: var(--red); }
+.compare-list.good-list li::before { content: '✓'; color: var(--blue); }
+
+/* ══ HOW IT WORKS ══ */
+.how-works { background: var(--white); }
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 28px;
+  margin-top: 56px;
+}
+
+.step-card { text-align: center; }
+
+.step-num {
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  background: var(--blue);
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 18px;
+  box-shadow: 0 6px 20px rgba(0,160,233,0.32);
+}
+
+.step-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 8px; color: var(--ink); }
+.step-card p  { font-size: 0.88rem; color: var(--gray); line-height: 1.65; }
+
+/* ══ PRODUCTS ══ */
+.products { background: var(--blue-pale); }
+
+.product-cats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+  gap: 14px;
+  margin-top: 48px;
+}
+
+.product-cat {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 18px;
+  padding: 24px 18px;
+  text-align: center;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.product-cat:hover { border-color: var(--blue); transform: translateY(-3px); }
+.product-cat-icon  { font-size: 28px; margin-bottom: 10px; }
+.product-cat-name  { font-size: 0.85rem; font-weight: 700; margin-bottom: 6px; color: var(--ink); }
+.product-cat-desc  { font-size: 0.77rem; color: var(--gray); line-height: 1.5; }
+
+/* ══ BINARY ══ */
+.binary { background: var(--white); }
+
+.binary-visual {
+  background: linear-gradient(145deg, var(--blue-deep) 0%, var(--blue-dark) 50%, var(--blue) 100%);
+  border-radius: 28px;
+  padding: 52px 32px;
+  margin-top: 48px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.binary-visual::before {
+  content: '';
+  position: absolute;
+  top: -80px; right: -80px;
+  width: 300px; height: 300px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.06);
+}
+
+.binary-you {
+  display: inline-flex;
+  align-items: center; justify-content: center;
+  background: #fff;
+  color: var(--blue);
+  font-size: 1rem;
+  font-weight: 800;
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  margin-bottom: 6px;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.2);
+}
+
+.binary-label { font-size: 12px; color: rgba(255,255,255,0.55); margin-bottom: 28px; }
+
+.binary-lines {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 8px;
+}
+
+.binary-line {
+  width: 2px; height: 36px;
+  background: rgba(255,255,255,0.35);
+}
+
+.binary-branches {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.binary-branch {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 18px;
+  padding: 22px 28px;
+  min-width: 150px;
+  backdrop-filter: blur(4px);
+}
+
+.binary-branch h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.binary-branch p { font-size: 0.82rem; color: rgba(255,255,255,0.65); line-height: 1.6; }
+
+.binary-key-points {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.binary-key {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 14px;
+  padding: 20px;
+  text-align: left;
+}
+
+.binary-key-title { font-size: 0.85rem; font-weight: 700; color: #fff; margin-bottom: 6px; }
+.binary-key-desc  { font-size: 0.8rem; color: rgba(255,255,255,0.6); line-height: 1.6; }
+
+/* ══ INCOME ══ */
+.income { background: var(--off-white); }
+
+.earnings-breakdown {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 48px;
+}
+
+.earnings-card {
+  background: var(--white);
+  border: 1.5px solid var(--border-soft);
+  border-radius: 18px;
+  padding: 28px 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.earnings-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: var(--blue);
+  border-radius: 18px 18px 0 0;
+}
+
+.earnings-pct {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--blue);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.earnings-name { font-size: 0.95rem; font-weight: 700; margin-bottom: 8px; color: var(--ink); }
+.earnings-desc { font-size: 0.85rem; color: var(--gray); line-height: 1.6; }
+
+.income-table-wrap {
+  margin-top: 40px;
+  border: 1.5px solid var(--border-soft);
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--white);
+}
+
+.income-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+
+.income-table th {
+  background: var(--blue);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 14px 20px;
+  text-align: left;
+}
+
+.income-table td {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border-soft);
+  vertical-align: top;
+  color: var(--ink-mid);
+}
+
+.income-table tr:last-child td { border-bottom: none; }
+.income-table tr:hover td { background: var(--blue-pale); }
+
+.rank-badge {
+  display: inline-block;
+  background: var(--blue-light);
+  color: var(--blue-deep);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 5px 14px;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+.income-range { font-weight: 700; color: var(--green); font-size: 0.95rem; }
+
+/* ══ PROOF ══ */
+.proof {
+  background: linear-gradient(135deg, var(--blue-deep) 0%, var(--blue-dark) 60%, var(--blue) 100%);
+  padding: 72px 24px;
+}
+
+.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 32px;
+  text-align: center;
+}
+
+.proof-num {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #fff;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.proof-label { font-size: 0.8rem; color: rgba(255,255,255,0.6); line-height: 1.5; font-weight: 500; }
+
+/* ══ WHY NOW ══ */
+.why-now { background: var(--white); }
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-top: 48px;
+}
+
+.why-card {
+  border: 1.5px solid var(--border-soft);
+  border-radius: 18px;
+  padding: 28px 24px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.why-card:hover { border-color: var(--blue); transform: translateY(-3px); }
+.why-card-icon { font-size: 26px; margin-bottom: 16px; }
+.why-card h3 { font-size: 0.98rem; font-weight: 700; margin-bottom: 8px; color: var(--ink); }
+.why-card p { font-size: 0.87rem; color: var(--gray); line-height: 1.65; }
+
+/* ══ CODE SECTION ══ */
+.code-display-section {
+  background: var(--blue-pale);
+  border-top: 1.5px solid var(--border);
+  border-bottom: 1.5px solid var(--border);
+  padding: 64px 24px;
+  text-align: center;
+}
+
+.code-box {
+  display: inline-block;
+  background: var(--white);
+  border: 2px dashed var(--blue);
+  border-radius: 20px;
+  padding: 32px 56px;
+  margin-top: 24px;
+}
+
+.code-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-bottom: 10px;
+}
+
+.code-value {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: var(--ink);
+  letter-spacing: 0.07em;
+  margin-bottom: 8px;
+}
+
+.code-instruction { font-size: 0.85rem; color: var(--gray); }
+
+.copy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--blue);
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  padding: 12px 28px;
+  font-family: var(--font);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 18px;
+  transition: background 0.2s, transform 0.15s;
+  box-shadow: 0 4px 16px rgba(0,160,233,0.3);
+}
+
+.copy-btn:hover { background: var(--blue-dark); transform: translateY(-1px); }
+.copy-btn.copied { background: var(--green); }
+
+/* ══ SPONSOR ══ */
+.sponsor-section { background: var(--off-white); }
+
+.sponsor-box {
+  background: var(--white);
+  border: 2px solid var(--blue);
+  border-radius: 24px;
+  padding: 48px 44px;
+  max-width: 720px;
+  margin: 48px auto 0;
+}
+
+.sponsor-avatar {
+  width: 72px; height: 72px;
+  border-radius: 50%;
+  background: var(--blue);
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 24px;
+}
+
+.sponsor-box blockquote {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--ink-mid);
+  margin-bottom: 28px;
+  font-weight: 400;
+  border-left: 3px solid var(--blue);
+  padding-left: 18px;
+}
+
+.sponsor-points { list-style: none; margin-bottom: 32px; }
+.sponsor-points li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 11px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  font-size: 0.93rem;
+  color: var(--ink-mid);
+}
+.sponsor-points li:last-child { border-bottom: none; }
+.sponsor-points li::before { content: '→'; font-weight: 700; color: var(--blue); margin-top: 1px; flex-shrink: 0; }
+
+.sponsor-contact {
+  background: var(--blue);
+  border-radius: 16px;
+  padding: 24px 28px;
+  color: #fff;
+}
+
+.sponsor-contact-name  { font-size: 1.15rem; font-weight: 700; margin-bottom: 4px; }
+.sponsor-contact-phone { font-size: 1.5rem; font-weight: 800; margin-bottom: 8px; color: rgba(255,255,255,0.92); }
+.sponsor-contact-note  { font-size: 0.82rem; color: rgba(255,255,255,0.65); }
+
+/* ══ FINAL CTA ══ */
+.cta-final {
+  background: linear-gradient(145deg, var(--blue-deep) 0%, var(--blue-dark) 50%, var(--blue) 100%);
+  text-align: center;
+  padding: 100px 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-final::before {
+  content: '';
+  position: absolute;
+  width: 600px; height: 600px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.04);
+  bottom: -200px; left: 50%;
+  transform: translateX(-50%);
+}
+
+.cta-final h2 {
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  font-weight: 800;
+  color: #fff;
+  max-width: 700px;
+  margin: 0 auto 20px;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+
+.cta-final h2 em { font-style: normal; text-decoration: underline; text-decoration-color: rgba(255,255,255,0.45); text-underline-offset: 6px; }
+
+.cta-final p {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 48px;
+  max-width: 460px;
+  margin-left: auto; margin-right: auto;
+}
+
+/* ══ FOOTER ══ */
+footer {
+  background: var(--ink);
+  color: rgba(255,255,255,0.35);
+  text-align: center;
+  padding: 32px 24px;
+  font-size: 0.78rem;
+  line-height: 1.75;
+}
+
+/* ══ RESPONSIVE ══ */
+@media(max-width:620px){
+  .binary-branches { flex-direction: column; align-items: center; }
+  .binary-lines { gap: 40px; }
+  .sponsor-box { padding: 32px 22px; }
+  .code-box { padding: 24px 28px; }
+  .income-table th, .income-table td { padding: 12px 13px; }
+  .hero-stats { padding: 18px 24px; gap: 24px; }
+}
+
+</style>
+</head>
+<body>
+
+<!-- ════ HERO ════ -->
+<section class="hero">
+  <div class="hero-orb o1"></div>
+  <div class="hero-orb o2"></div>
+
+  <div style="display:flex;align-items:center;gap:16px;margin-bottom:32px;flex-wrap:wrap;justify-content:center;">
+    <div class="hero-badge" style="margin-bottom:0;">
+      <div class="hero-badge-dot"></div>
+      K-Lifestyle Network &nbsp;·&nbsp; 27 Countries
+    </div>
+    <a href="https://atomygd.blogspot.com/" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.28);border-radius:100px;padding:8px 18px;font-size:12px;font-weight:600;color:rgba(255,255,255,0.85);text-decoration:none;letter-spacing:0.06em;text-transform:uppercase;transition:background 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.22)'" onmouseout="this.style.background='rgba(255,255,255,0.12)'">
+      ✍ My Blog
+    </a>
+  </div>
+
+  <h1>Shop Your Essentials.<br>Earn While You Sleep.</h1>
+
+  <p class="hero-sub">
+    Atomy is the world's smartest daily shopping system —
+    where buying toothpaste, skincare, and groceries
+    automatically builds you passive income.
+  </p>
+
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <span class="hero-stat-num">₩0</span>
+      <span class="hero-stat-label">Join Fee</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">27</span>
+      <span class="hero-stat-label">Countries</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">16M+</span>
+      <span class="hero-stat-label">Members</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">70%</span>
+      <span class="hero-stat-label">Revenue Shared</span>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;align-items:center;gap:18px;">
+    <a href="https://join.atomy.com/global/main" target="_blank" class="btn-primary">
+      Join Atomy Free Now
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+    <a href="https://wa.me/821034338945" target="_blank" style="display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.35);border-radius:100px;padding:12px 28px;font-size:0.9rem;font-weight:600;color:#fff;text-decoration:none;backdrop-filter:blur(4px);transition:background 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.25)'" onmouseout="this.style.background='rgba(255,255,255,0.15)'">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Ask on WhatsApp
+    </a>
+    <div class="hero-no-fees">
+      <span class="no-fee-item"><div class="no-fee-x">✕</div> No Join Fee</span>
+      <span class="no-fee-item"><div class="no-fee-x">✕</div> No Autoship</span>
+      <span class="no-fee-item"><div class="no-fee-x">✕</div> No Annual Fee</span>
+      <span class="no-fee-item"><div class="no-fee-x">✕</div> No Inventory</span>
+    </div>
+  </div>
+</section>
+
+<!-- ════ COMPARE ════ -->
+<section class="problem">
+  <div class="container">
+    <p class="section-label">The Difference</p>
+    <h2 class="section-title">Same Products.<br>Different Results.</h2>
+    <p class="section-desc">
+      You're already buying shampoo, detergent, and vitamins every month.
+      The only question is: who profits from your shopping?
+    </p>
+
+    <div class="compare-grid">
+      <div class="compare-card bad">
+        <div class="compare-card-header">
+          <div class="compare-icon bad-icon">🛒</div>
+          <h3>Regular Shopping<br>(Coupang, Amazon)</h3>
+        </div>
+        <ul class="compare-list bad-list">
+          <li>Profits go to the platform</li>
+          <li>Rewards locked inside their ecosystem</li>
+          <li>Referrals earn you nothing</li>
+          <li>Hidden brand &amp; ad markups in price</li>
+          <li>No residual benefit over time</li>
+        </ul>
+      </div>
+
+      <div class="compare-card good">
+        <div class="compare-card-header">
+          <div class="compare-icon good-icon">✨</div>
+          <h3>Atomy Shopping<br>(Same products, smarter)</h3>
+        </div>
+        <ul class="compare-list good-list">
+          <li>Your purchases build cashback for you</li>
+          <li>Real cash — deposited to your bank</li>
+          <li>Friends who join boost your income automatically</li>
+          <li>No middlemen = lower prices + better quality</li>
+          <li>Income grows even when you're not shopping</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ HOW IT WORKS ════ -->
+<section class="how-works">
+  <div class="container">
+    <p class="section-label">How It Works</p>
+    <h2 class="section-title">5 Steps to<br>Automated Cashback</h2>
+
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h3>Join Free</h3>
+        <p>Create your account in minutes. Zero fees. No commitments. No pressure.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h3>Switch Your Shopping</h3>
+        <p>Buy the same daily essentials — toothpaste, detergent, skincare — from Atomy instead.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h3>Accumulate PV</h3>
+        <p>Every purchase earns PV (points). They never expire and stack globally across 27 countries.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">4</div>
+        <h3>Share Naturally</h3>
+        <p>Tell a friend. When they shop, their PV adds to yours — building your income line automatically.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">5</div>
+        <h3>Receive Cash</h3>
+        <p>When thresholds are met, real money is deposited directly into your bank account every week.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ PRODUCTS ════ -->
+<section class="products">
+  <div class="container">
+    <p class="section-label">What You'll Buy</p>
+    <h2 class="section-title">568+ Products<br>You Already Need</h2>
+    <p class="section-desc">
+      No new habits. No weird supplements you'll never finish.
+      Just the everyday items already in your bathroom, kitchen, and medicine cabinet.
+    </p>
+
+    <div class="product-cats">
+      <div class="product-cat">
+        <div class="product-cat-icon">🧴</div>
+        <div class="product-cat-name">K-Beauty Skincare</div>
+        <div class="product-cat-desc">Award-winning formulas. Sejong Award &amp; Jang Young-sil Prize winner.</div>
+      </div>
+      <div class="product-cat">
+        <div class="product-cat-icon">🦷</div>
+        <div class="product-cat-name">Oral Care</div>
+        <div class="product-cat-desc">Toothpaste, brushes, mouthwash — daily essentials at factory prices.</div>
+      </div>
+      <div class="product-cat">
+        <div class="product-cat-icon">🧼</div>
+        <div class="product-cat-name">Home Care</div>
+        <div class="product-cat-desc">Laundry, kitchen, household cleaning — everything you need monthly.</div>
+      </div>
+      <div class="product-cat">
+        <div class="product-cat-icon">💊</div>
+        <div class="product-cat-name">Health &amp; Wellness</div>
+        <div class="product-cat-desc">HemoHIM — ₩200B+ annual sales for 11 consecutive years. Anti-doping certified.</div>
+      </div>
+      <div class="product-cat">
+        <div class="product-cat-icon">🥩</div>
+        <div class="product-cat-name">Fresh Food</div>
+        <div class="product-cat-desc">Meat, produce, premium snacks via Atomy's curated Azamall marketplace.</div>
+      </div>
+      <div class="product-cat">
+        <div class="product-cat-icon">📺</div>
+        <div class="product-cat-name">Electronics &amp; Home</div>
+        <div class="product-cat-desc">LG, Samsung, furniture, and more — at or below regular retail price.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ BINARY ════ -->
+<section class="binary">
+  <div class="container">
+    <p class="section-label">The Structure</p>
+    <h2 class="section-title">Binary Network —<br>Your Two Streams of Income</h2>
+    <p class="section-desc">
+      Atomy uses a binary structure: two lines (A and B) grow beneath you.
+      PV from every person in your entire network — with no depth limit — flows up to you.
+    </p>
+
+    <div class="binary-visual">
+      <div class="binary-you">YOU</div>
+      <div class="binary-label">Your account — center of both lines</div>
+
+      <div class="binary-lines">
+        <div class="binary-line"></div>
+        <div class="binary-line"></div>
+      </div>
+
+      <div class="binary-branches">
+        <div class="binary-branch">
+          <h4>A Line (Left)</h4>
+          <p>Your first referral stream. All their purchases and their downline's purchases accumulate here.</p>
+        </div>
+        <div class="binary-branch">
+          <h4>B Line (Right)</h4>
+          <p>Your second referral stream. Grows in parallel — both lines must grow for maximum income.</p>
+        </div>
+      </div>
+
+      <div class="binary-key-points">
+        <div class="binary-key">
+          <div class="binary-key-title">No Depth Limit</div>
+          <div class="binary-key-desc">PV flows up from unlimited levels below you. A person 50 levels deep still contributes to your income.</div>
+        </div>
+        <div class="binary-key">
+          <div class="binary-key-title">PV Never Expires</div>
+          <div class="binary-key-desc">Unmet thresholds roll over to the next cycle — nothing is ever lost.</div>
+        </div>
+        <div class="binary-key">
+          <div class="binary-key-title">Global PV Merge</div>
+          <div class="binary-key-desc">Members in the US, Japan, or Germany in your line? Their purchases add to your account.</div>
+        </div>
+        <div class="binary-key">
+          <div class="binary-key-title">3-Gen Inheritance</div>
+          <div class="binary-key-desc">Your network can be passed to children and grandchildren with no inheritance tax burden.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ INCOME ════ -->
+<section class="income">
+  <div class="container">
+    <p class="section-label">Income Potential</p>
+    <h2 class="section-title">Real Numbers.<br>Real Cashback.</h2>
+    <p class="section-desc">
+      Atomy distributes 70% of all revenue back to members — more than any comparable platform.
+    </p>
+
+    <div class="earnings-breakdown">
+      <div class="earnings-card">
+        <div class="earnings-pct">44%</div>
+        <div class="earnings-name">Support Bonus</div>
+        <div class="earnings-desc">Paid weekly when A+B line PV thresholds are met. Direct income from your network's shopping activity.</div>
+      </div>
+      <div class="earnings-card">
+        <div class="earnings-pct">20%</div>
+        <div class="earnings-name">Rank Bonus</div>
+        <div class="earnings-desc">When you achieve a rank, you receive a share of the company's total global PV — paid twice monthly.</div>
+      </div>
+      <div class="earnings-card">
+        <div class="earnings-pct">6%</div>
+        <div class="earnings-name">Education Bonus</div>
+        <div class="earnings-desc">Additional rewards for participating in seminars and education activities.</div>
+      </div>
+    </div>
+
+    <div class="income-table-wrap">
+      <table class="income-table">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Requirement</th>
+            <th>Est. Monthly Income</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="rank-badge">Sales Master</span></td>
+            <td>A &amp; B lines each reach 2.5M PV</td>
+            <td><span class="income-range">₩2M – ₩4M</span><br><small style="color:#999">~$1,500–$3,000 USD</small></td>
+          </tr>
+          <tr>
+            <td><span class="rank-badge">Diamond Master</span></td>
+            <td>2 Sales Masters in downline</td>
+            <td><span class="income-range">₩4M – ₩8M</span><br><small style="color:#999">~$3,000–$6,000 USD</small></td>
+          </tr>
+          <tr>
+            <td><span class="rank-badge">Sharon Rose Master</span></td>
+            <td>2 Diamond Masters in downline</td>
+            <td><span class="income-range">₩8M+</span><br><small style="color:#999">~$6,000+ USD</small></td>
+          </tr>
+          <tr>
+            <td><span class="rank-badge">Star Master +</span></td>
+            <td>Upper rank network expansion</td>
+            <td><span class="income-range">₩Tens of millions</span><br><small style="color:#999">Potentially $100K+ USD/yr</small></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ════ PROOF ════ -->
+<div class="proof">
+  <div class="container">
+    <div class="proof-grid">
+      <div>
+        <span class="proof-num">₩2.68T</span>
+        <span class="proof-label">2024 Global Revenue</span>
+      </div>
+      <div>
+        <span class="proof-num">16M+</span>
+        <span class="proof-label">Members Worldwide</span>
+      </div>
+      <div>
+        <span class="proof-num">27</span>
+        <span class="proof-label">Countries — One System</span>
+      </div>
+      <div>
+        <span class="proof-num">+10%</span>
+        <span class="proof-label">2024 Overseas Growth<br>(while rivals shrank)</span>
+      </div>
+      <div>
+        <span class="proof-num">#1</span>
+        <span class="proof-label">Korean Export<br>Distribution Company</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════ WHY NOW ════ -->
+<section class="why-now">
+  <div class="container">
+    <p class="section-label">Why Start Now</p>
+    <h2 class="section-title">Zero Risk.<br>Infinite Upside.</h2>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-card-icon">🚀</div>
+        <h3>Zero Startup Cost</h3>
+        <p>No franchise fees. No inventory. No minimum purchase. The lowest barrier to entry of any business model in existence.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-card-icon">📈</div>
+        <h3>Compounds Like Interest</h3>
+        <p>Get 3–5 people started well and the structure begins growing itself. Every new member shops for life — their PV flows to you.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-card-icon">🌏</div>
+        <h3>Global Expansion NOW</h3>
+        <p>EU revenue grew 3x in 2024. Untapped markets are opening. Every person in your line can shop from 27 countries.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-card-icon">🏠</div>
+        <h3>Inflation Proof</h3>
+        <p>As grocery prices rise, Atomy's no-middlemen model keeps prices lower than retail — while building your income simultaneously.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-card-icon">👨‍👩‍👧‍👦</div>
+        <h3>Leave It to Your Family</h3>
+        <p>The network is inheritable across 3 generations. No inheritance tax burden. Your children receive the income stream, not just a lump sum.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-card-icon">😴</div>
+        <h3>Earn While You Sleep</h3>
+        <p>Members in the US, Japan, and Europe are shopping right now. Their PV adds to your account automatically — 24/7.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ CODE SECTION ════ -->
+<div class="code-display-section">
+  <p class="section-label">Your Sponsor Code</p>
+  <h2 class="section-title" style="margin-bottom:10px;">Ready to Join?</h2>
+  <p style="color:var(--gray);font-size:0.95rem;">
+    Copy the sponsor code below, then click "Join Free" and paste it in the referral field.
+  </p>
+
+  <div class="code-box">
+    <div class="code-label">Sponsor / Referral Code</div>
+    <div class="code-value" id="sponsorCode">YOON8945</div>
+    <div class="code-instruction">Enter this code when registering on Atomy</div>
+    <br>
+    <button class="copy-btn" onclick="copyCode()" id="copyBtn">
+      📋 &nbsp;Copy Code
+    </button>
+  </div>
+</div>
+
+<!-- ════ SPONSOR ════ -->
+<section class="sponsor-section">
+  <div class="container">
+    <p class="section-label">Your Sponsor</p>
+    <h2 class="section-title">Why Join<br>Through Me?</h2>
+
+    <div class="sponsor-box">
+      <div class="sponsor-avatar">YD</div>
+
+      <blockquote>
+        "I run a 200-pyeong café in my 30s. I know what it means to trade time for money —
+        and how exhausting it becomes. When my mother introduced me to Atomy, I was skeptical.
+        But one product changed my mind. Then I noticed cashback in my account.
+        Then at a seminar, I watched someone inherit their father's Atomy code and become
+        what they called a '₩1 billion heiress.' That's when I understood — this isn't just
+        income. This is a structure you can pass on."
+      </blockquote>
+
+      <ul class="sponsor-points">
+        <li><strong>I study, so you don't have to start from zero.</strong> I share everything I learn — compensation plan, product details, growth strategies.</li>
+        <li><strong>Zero pressure, ever.</strong> You go at your own pace. No hard sells. No awkward family dinners ruined.</li>
+        <li><strong>We win together or not at all.</strong> My income grows when yours does. I'm genuinely motivated to help you succeed.</li>
+        <li><strong>Practical, modern approach.</strong> I'll show you how to grow through content, not cold calls.</li>
+      </ul>
+
+      <div class="sponsor-contact">
+        <div class="sponsor-contact-name">Yoon Dahye &nbsp;·&nbsp; 윤다혜</div>
+        <div class="sponsor-contact-phone">010 · 3433 · 8945</div>
+        <div class="sponsor-contact-note" style="margin-bottom:14px;">Feel free to message — no obligation, no pitch. Just answers.</div>
+        <a href="https://wa.me/821034338945" target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.35);border-radius:100px;padding:10px 22px;font-size:0.88rem;font-weight:600;color:#fff;text-decoration:none;transition:background 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.28)'" onmouseout="this.style.background='rgba(255,255,255,0.18)'">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Message on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ FINAL CTA ════ -->
+<section class="cta-final">
+  <div class="container">
+    <h2>Your Shopping Will Happen<br>Anyway. Make It <em>Work for You.</em></h2>
+    <p>
+      Free to join. No risk. No autoship. No catch.
+      Just a smarter place to buy what you already buy.
+    </p>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center;align-items:center;">
+      <a href="https://join.atomy.com/global/main" target="_blank" class="btn-primary" style="font-size:1.05rem;padding:20px 48px;">
+        Join Atomy Free Now
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:20px;height:20px"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="https://wa.me/821034338945" target="_blank" style="display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,0.15);border:1.5px solid rgba(255,255,255,0.4);border-radius:100px;padding:20px 32px;font-size:1rem;font-weight:600;color:#fff;text-decoration:none;transition:background 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.25)'" onmouseout="this.style.background='rgba(255,255,255,0.15)'">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp Me
+      </a>
+    </div>
+    <p style="margin-top:28px;font-size:0.8rem;color:rgba(255,255,255,0.4);">
+      Sponsor code: <strong style="color:rgba(255,255,255,0.7);" id="footerCode">YOON8945</strong> &nbsp;·&nbsp; atomy.com &nbsp;·&nbsp; Free membership
+    </p>
+  </div>
+</section>
+
+<!-- ════ FOOTER ════ -->
+<footer>
+  <p>Presented by Yoon Dahye · Atomy Independent Member</p>
+  <p style="margin-top:10px;">
+    <a href="https://atomygd.blogspot.com/" target="_blank" style="color:rgba(255,255,255,0.55);text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.25);padding-bottom:1px;transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,0.55)'">📝 Visit My Blog → atomygd.blogspot.com</a>
+  </p>
+  <p style="margin-top:8px;">
+    Income figures shown are illustrative examples based on Atomy's published marketing plan.<br>
+    Individual results vary based on personal activity and network development.<br>
+    No income is guaranteed. Atomy is registered with the Korea Fair Trade Commission.
+  </p>
+</footer>
+
+<script>
+/* ══════════════════════════════════════
+   SPONSOR CODE — CHANGE ONLY THIS LINE
+   ══════════════════════════════════════ */
+const SPONSOR_CODE = "YOON8945";  /* ← 여기만 바꾸세요 */
+/* ══════════════════════════════════════ */
+
+document.getElementById('sponsorCode').textContent = SPONSOR_CODE;
+document.getElementById('footerCode').textContent  = SPONSOR_CODE;
+
+function copyCode() {
+  navigator.clipboard.writeText(SPONSOR_CODE).then(() => {
+    const btn = document.getElementById('copyBtn');
+    btn.textContent = '✅  Copied!';
+    btn.classList.add('copied');
+    setTimeout(() => {
+      btn.innerHTML = '📋 &nbsp;Copy Code';
+      btn.classList.remove('copied');
+    }, 2500);
+  });
+}
+</script>
+
+
+
+</html>\n
+<!-- ════ AI CHAT WIDGET ════ -->
+<style>
+#chat-fab {
+  position: fixed;
+  bottom: 28px; right: 28px;
+  width: 60px; height: 60px;
+  border-radius: 50%;
+  background: #00a0e9;
+  box-shadow: 0 6px 24px rgba(0,160,233,0.45);
+  border: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  z-index: 9999;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+#chat-fab:hover { transform: scale(1.08); box-shadow: 0 10px 32px rgba(0,160,233,0.55); }
+#chat-fab svg { width: 28px; height: 28px; }
+#chat-fab-badge {
+  position: absolute;
+  top: -2px; right: -2px;
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  background: #e63946;
+  border: 2px solid #fff;
+  font-size: 10px; font-weight: 800;
+  color: #fff;
+  display: flex; align-items: center; justify-content: center;
+}
+#chat-popup {
+  position: fixed;
+  bottom: 100px; right: 28px;
+  width: 370px;
+  max-height: 580px;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.18);
+  display: none;
+  flex-direction: column;
+  z-index: 9998;
+  overflow: hidden;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+#chat-popup.open { display: flex; }
+#chat-header {
+  background: linear-gradient(135deg, #004e8c, #00a0e9);
+  color: #fff;
+  padding: 18px 20px;
+  display: flex; align-items: center; gap: 12px;
+}
+#chat-header-avatar {
+  width: 42px; height: 42px; border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem; font-weight: 800; flex-shrink: 0;
+}
+#chat-header-info { flex: 1; }
+#chat-header-name { font-size: 0.95rem; font-weight: 700; }
+#chat-header-status {
+  font-size: 0.75rem; color: rgba(255,255,255,0.75);
+  display: flex; align-items: center; gap: 5px; margin-top: 2px;
+}
+#chat-header-status::before {
+  content: ''; width: 7px; height: 7px; border-radius: 50%;
+  background: #4ade80; display: inline-block;
+}
+#chat-close {
+  background: none; border: none; cursor: pointer;
+  color: rgba(255,255,255,0.8); font-size: 1.3rem; padding: 4px;
+  line-height: 1;
+}
+#chat-close:hover { color: #fff; }
+#chat-messages {
+  flex: 1; overflow-y: auto;
+  padding: 18px 16px;
+  display: flex; flex-direction: column; gap: 12px;
+  max-height: 380px;
+}
+.msg { display: flex; gap: 8px; align-items: flex-end; }
+.msg.user { flex-direction: row-reverse; }
+.msg-bubble {
+  max-width: 78%;
+  padding: 10px 14px;
+  border-radius: 18px;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+.msg.bot .msg-bubble { background: #f0faff; color: #0d1f2d; border-bottom-left-radius: 4px; }
+.msg.user .msg-bubble { background: #00a0e9; color: #fff; border-bottom-right-radius: 4px; }
+.msg-avatar {
+  width: 28px; height: 28px; border-radius: 50%;
+  background: #00a0e9; color: #fff;
+  font-size: 0.7rem; font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.typing-indicator { display: flex; gap: 4px; padding: 12px 14px; background: #f0faff; border-radius: 18px; border-bottom-left-radius: 4px; width: fit-content; }
+.typing-dot { width: 7px; height: 7px; border-radius: 50%; background: #00a0e9; animation: typingBounce 1.2s infinite ease-in-out; }
+.typing-dot:nth-child(2) { animation-delay: 0.2s; }
+.typing-dot:nth-child(3) { animation-delay: 0.4s; }
+@keyframes typingBounce {
+  0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+  30% { transform: translateY(-6px); opacity: 1; }
+}
+#chat-quick-btns { padding: 0 16px 10px; display: flex; flex-wrap: wrap; gap: 7px; }
+.quick-btn {
+  background: #f0faff; border: 1px solid #b3e0f7; border-radius: 100px;
+  padding: 6px 13px; font-size: 0.78rem; font-weight: 600;
+  color: #0077b6; cursor: pointer;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  transition: background 0.15s; white-space: nowrap;
+}
+.quick-btn:hover { background: #d0eef9; }
+#chat-input-area { border-top: 1px solid rgba(0,0,0,0.07); padding: 12px 14px; display: flex; gap: 8px; align-items: center; }
+#chat-input {
+  flex: 1; border: 1.5px solid #d0dde6; border-radius: 100px;
+  padding: 10px 16px; font-size: 0.88rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  outline: none; transition: border-color 0.2s; color: #0d1f2d;
+}
+#chat-input:focus { border-color: #00a0e9; }
+#chat-send {
+  width: 38px; height: 38px; border-radius: 50%;
+  background: #00a0e9; border: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; transition: background 0.2s;
+}
+#chat-send:hover { background: #0077b6; }
+#chat-send svg { width: 16px; height: 16px; }
+#chat-wa-btn {
+  margin: 0 16px 14px;
+  display: none;
+  align-items: center; justify-content: center; gap: 8px;
+  background: #25d366; color: #fff; text-decoration: none;
+  border-radius: 100px; padding: 12px;
+  font-size: 0.88rem; font-weight: 700; transition: background 0.2s;
+}
+#chat-wa-btn:hover { background: #1da851; }
+#chat-wa-btn.visible { display: flex; }
+@media(max-width: 420px) {
+  #chat-popup { width: calc(100vw - 32px); right: 16px; }
+}
+</style>
+
+<button id="chat-fab" onclick="toggleChat()" aria-label="Chat with AI">
+  <div id="chat-fab-badge">1</div>
+  <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2">
+    <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+  </svg>
+</button>
+
+<div id="chat-popup">
+  <div id="chat-header">
+    <div id="chat-header-avatar">YD</div>
+    <div id="chat-header-info">
+      <div id="chat-header-name">Atomy AI Assistant</div>
+      <div id="chat-header-status">Online · Powered by AI</div>
+    </div>
+    <button id="chat-close" onclick="toggleChat()">&#x2715;</button>
+  </div>
+  <div id="chat-messages"></div>
+  <div id="chat-quick-btns">
+    <button class="quick-btn" onclick="sendQuick('What is Atomy?')">What is Atomy?</button>
+    <button class="quick-btn" onclick="sendQuick('Is it really free to join?')">Free to join?</button>
+    <button class="quick-btn" onclick="sendQuick('How do I earn money?')">How to earn?</button>
+    <button class="quick-btn" onclick="sendQuick('What products does Atomy sell?')">Products?</button>
+    <button class="quick-btn" onclick="sendQuick('How does the binary structure work?')">Binary structure?</button>
+  </div>
+  <a href="https://wa.me/821034338945" target="_blank" id="chat-wa-btn">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    Chat with Yoon Dahye on WhatsApp
+  </a>
+  <div id="chat-input-area">
+    <input id="chat-input" type="text" placeholder="Ask me anything about Atomy..."
+      onkeydown="if(event.key==='Enter') sendMessage()"/>
+    <button id="chat-send" onclick="sendMessage()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5">
+        <path d="M22 2L11 13M22 2L15 22 11 13 2 9l20-7z"/>
+      </svg>
+    </button>
+  </div>
+</div>
+
+<script>
+const SYSTEM_PROMPT = "You are a friendly and knowledgeable AI assistant for Yoon Dahye, an Atomy network marketing member based in Korea. Your role is to answer questions about Atomy in a warm, honest, and enthusiastic way. Key facts: Atomy is a Korean network marketing company in 27 countries with 16M+ members. It sells K-Beauty skincare, oral care, home care, HemoHIM supplements, fresh food, electronics. Joining is 100% free — zero join fee, no autoship, no monthly fees. Members earn cashback via PV from their shopping and their network. Binary structure: two lines (A and B), PV never expires, accumulates globally. 70% revenue shared: 44% support bonus weekly, 20% rank bonus, 6% education bonus. Ranks: Sales Master (~$1,500-3,000/mo), Diamond Master (~$3,000-6,000/mo), Sharon Rose Master ($6,000+/mo). Network inheritable across 3 generations. Sponsor: Yoon Dahye, WhatsApp: https://wa.me/821034338945, Blog: https://atomygd.blogspot.com. Keep answers concise (2-4 sentences). Always offer to help further or suggest contacting Yoon Dahye on WhatsApp. For joining direct to: https://join.atomy.com/global/main. Respond ONLY in English.";
+
+let chatHistory = [];
+let chatOpened = false;
+let waButtonShown = false;
+
+function toggleChat() {
+  const popup = document.getElementById("chat-popup");
+  const badge = document.getElementById("chat-fab-badge");
+  popup.classList.toggle("open");
+  if (!chatOpened && popup.classList.contains("open")) {
+    chatOpened = true;
+    badge.style.display = "none";
+    addBotMessage("Hi! I'm the Atomy AI Assistant. Ask me anything about Atomy — products, income, how to join, or anything else!");
+  }
+}
+
+function addBotMessage(text) {
+  const msgs = document.getElementById("chat-messages");
+  const div = document.createElement("div");
+  div.className = "msg bot";
+  div.innerHTML = "<div class=\"msg-avatar\">YD</div><div class=\"msg-bubble\">" + text + "</div>";
+  msgs.appendChild(div);
+  msgs.scrollTop = msgs.scrollHeight;
+}
+
+function addUserMessage(text) {
+  const msgs = document.getElementById("chat-messages");
+  const div = document.createElement("div");
+  div.className = "msg user";
+  div.innerHTML = "<div class=\"msg-bubble\">" + text + "</div>";
+  msgs.appendChild(div);
+  msgs.scrollTop = msgs.scrollHeight;
+}
+
+function showTyping() {
+  const msgs = document.getElementById("chat-messages");
+  const div = document.createElement("div");
+  div.className = "msg bot";
+  div.id = "typing-msg";
+  div.innerHTML = "<div class=\"msg-avatar\">YD</div><div class=\"typing-indicator\"><div class=\"typing-dot\"></div><div class=\"typing-dot\"></div><div class=\"typing-dot\"></div></div>";
+  msgs.appendChild(div);
+  msgs.scrollTop = msgs.scrollHeight;
+}
+
+function removeTyping() {
+  const t = document.getElementById("typing-msg");
+  if (t) t.remove();
+}
+
+function showWaButton() {
+  if (!waButtonShown) {
+    document.getElementById("chat-wa-btn").classList.add("visible");
+    waButtonShown = true;
+  }
+}
+
+function sendQuick(text) {
+  const popup = document.getElementById("chat-popup");
+  if (!popup.classList.contains("open")) toggleChat();
+  setTimeout(function() { sendMessageText(text); }, chatOpened ? 0 : 600);
+}
+
+function sendMessage() {
+  const input = document.getElementById("chat-input");
+  const text = input.value.trim();
+  if (!text) return;
+  input.value = "";
+  sendMessageText(text);
+}
+
+async function sendMessageText(text) {
+  addUserMessage(text);
+  chatHistory.push({ role: "user", content: text });
+
+  document.getElementById("chat-quick-btns").style.display = "none";
+  showTyping();
+
+  try {
+    const response = await fetch("/.netlify/functions/chat", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ messages: chatHistory })
+    });
+
+    const data = await response.json();
+    removeTyping();
+
+    const reply = (data.content && data.content[0] && data.content[0].text)
+      ? data.content[0].text
+      : "Sorry, I had trouble responding. Please contact Yoon Dahye directly on WhatsApp!";
+
+    chatHistory.push({ role: "assistant", content: reply });
+    addBotMessage(reply);
+
+    if (chatHistory.length >= 4) showWaButton();
+
+  } catch(e) {
+    removeTyping();
+    addBotMessage("Sorry, something went wrong. Please contact Yoon Dahye on WhatsApp — she will be happy to help!");
+    showWaButton();
+  }
+}
+</script>
+</body>
+</html>
