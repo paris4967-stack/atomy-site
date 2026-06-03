@@ -1224,13 +1224,27 @@ footer {
 
 <script>
 /* ══════════════════════════════════════
-   SPONSOR CODE — CHANGE ONLY THIS LINE
+   GOOGLE SHEETS 연동 - 자동으로 코드 불러옴
    ══════════════════════════════════════ */
-const SPONSOR_CODE = "YOON8945";  /* ← 여기만 바꾸세요 */
-/* ══════════════════════════════════════ */
+const SHEET_ID = "18s9gmrMdTHVR7A0qz9x9-cJu7S5iREELqsHck253ryk";
+const SHEET_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json&sheet=시트1`;
 
-document.getElementById('sponsorCode').textContent = SPONSOR_CODE;
-document.getElementById('footerCode').textContent  = SPONSOR_CODE;
+async function loadSponsorCode() {
+  try {
+    const res = await fetch(SHEET_URL);
+    const text = await res.text();
+    const json = JSON.parse(text.substring(47).slice(0, -2));
+    const code = json.table.rows[0].c[1].v;
+    document.getElementById('sponsorCode').textContent = code;
+    document.getElementById('footerCode').textContent = code;
+  } catch(e) {
+    // 시트 로딩 실패 시 기본값 사용
+    document.getElementById('sponsorCode').textContent = "YOON8945";
+    document.getElementById('footerCode').textContent = "YOON8945";
+  }
+}
+
+loadSponsorCode();
 
 function copyCode() {
   navigator.clipboard.writeText(SPONSOR_CODE).then(() => {
