@@ -496,10 +496,6 @@ section { padding: 88px 24px; }
 
 .income-table-wrap {
   margin-top: 40px;
-  border: 1.5px solid var(--border-soft);
-  border-radius: 20px;
-  overflow: hidden;
-  background: var(--white);
 }
 
 .income-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
@@ -537,6 +533,35 @@ section { padding: 88px 24px; }
 }
 
 .income-range { font-weight: 700; color: var(--green); font-size: 0.95rem; }
+
+/* 모바일 테이블 → 카드형 */
+@media(max-width: 640px) {
+  .income-table thead { display: none; }
+  .income-table, .income-table tbody, .income-table tr, .income-table td {
+    display: block; width: 100%;
+  }
+  .income-table tr {
+    background: var(--white);
+    border: 1.5px solid var(--border-soft);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 14px;
+  }
+  .income-table td {
+    padding: 6px 0;
+    border-bottom: none;
+  }
+  .income-table td::before {
+    content: attr(data-label);
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--blue);
+    letter-spacing: 0.08em;
+    display: block;
+    margin-bottom: 4px;
+  }
+}
 
 /* ══ PROOF ══ */
 .proof {
@@ -1041,24 +1066,24 @@ footer {
         </thead>
         <tbody>
           <tr>
-            <td><span class="rank-badge">Sales Master</span></td>
-            <td>A &amp; B lines each reach 2.5M PV</td>
-            <td><span class="income-range">₩2M – ₩4M</span><br><small style="color:#999">~$1,500–$3,000 USD</small></td>
+            <td data-label="Rank"><span class="rank-badge">Sales Master</span></td>
+            <td data-label="Requirement">A &amp; B lines each reach 2.5M PV</td>
+            <td data-label="Est. Monthly Income"><span class="income-range">₩2M – ₩4M</span><br><small style="color:#999">~$1,500–$3,000 USD</small></td>
           </tr>
           <tr>
-            <td><span class="rank-badge">Diamond Master</span></td>
-            <td>2 Sales Masters in downline</td>
-            <td><span class="income-range">₩4M – ₩8M</span><br><small style="color:#999">~$3,000–$6,000 USD</small></td>
+            <td data-label="Rank"><span class="rank-badge">Diamond Master</span></td>
+            <td data-label="Requirement">2 Sales Masters in downline</td>
+            <td data-label="Est. Monthly Income"><span class="income-range">₩4M – ₩8M</span><br><small style="color:#999">~$3,000–$6,000 USD</small></td>
           </tr>
           <tr>
-            <td><span class="rank-badge">Sharon Rose Master</span></td>
-            <td>2 Diamond Masters in downline</td>
-            <td><span class="income-range">₩8M+</span><br><small style="color:#999">~$6,000+ USD</small></td>
+            <td data-label="Rank"><span class="rank-badge">Sharon Rose Master</span></td>
+            <td data-label="Requirement">2 Diamond Masters in downline</td>
+            <td data-label="Est. Monthly Income"><span class="income-range">₩8M+</span><br><small style="color:#999">~$6,000+ USD</small></td>
           </tr>
           <tr>
-            <td><span class="rank-badge">Star Master +</span></td>
-            <td>Upper rank network expansion</td>
-            <td><span class="income-range">₩Tens of millions</span><br><small style="color:#999">Potentially $100K+ USD/yr</small></td>
+            <td data-label="Rank"><span class="rank-badge">Star Master +</span></td>
+            <td data-label="Requirement">Upper rank network expansion</td>
+            <td data-label="Est. Monthly Income"><span class="income-range">₩Tens of millions</span><br><small style="color:#999">Potentially $100K+ USD/yr</small></td>
           </tr>
         </tbody>
       </table>
